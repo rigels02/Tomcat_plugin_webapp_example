@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-tomcate7:run</actionName>
+            <displayName>tomcate7:run</displayName>
+            <goals>
+                <goal>org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-tomcat7:run debug</actionName>
+            <displayName>tomcat7:run debug</displayName>
+            <goals>
+                <goal>org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run</goal>
+            </goals>
+            <properties>
+                <jpda.listen>maven</jpda.listen>
+            </properties>
+        </action>
+        
+    </actions>
